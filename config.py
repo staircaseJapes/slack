@@ -73,7 +73,7 @@ BOT_EXTRA_PLUGIN_DIR = '/home/ec2-user/slack/plugins'
 
 # The location of the log file. If you set this to None, then logging will
 # happen to console only.
-BOT_LOG_FILE = '/Users/johnoconnor/Documents/Programming/slack/err.log'
+BOT_LOG_FILE = '/home/ec2-user/slack/err.log'
 
 # The verbosity level of logging that is done to the above logfile, and to
 # the console. This takes the standard Python logging levels, DEBUG, INFO,
