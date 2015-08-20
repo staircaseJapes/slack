@@ -1,0 +1,9 @@
+[Core]
+Name = Tasker
+Module = tasker
+
+[Documentation]
+Description = An integration to bring Todoist task management into slack.
+
+[Python]
+Version = 2+
