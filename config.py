@@ -48,14 +48,14 @@ BACKEND = 'Slack'
 
 # The location where all of Err's data should be stored. Make sure to set
 # this to a directory that is writable by the user running the bot.
-BOT_DATA_DIR = '/Users/johnoconnor/Documents/Programming/slack'
+BOT_DATA_DIR = '/home/ec2-user/slack'
 
 # Set this to a directory on your system where you want to load extra
 # plugins from, which is useful mostly if you want to develop a plugin
 # locally before publishing it. Note that you can specify only a single
 # directory, however you are free to create subdirectories with multiple
 # plugins inside this directory.
-BOT_EXTRA_PLUGIN_DIR = '/Users/johnoconnor/Documents/Programming/slack/plugins'
+BOT_EXTRA_PLUGIN_DIR = '/home/ec2-user/slack/plugins'
 
 # If you use an external backend as a plugin,
 # this is where you tell err where to find it.
