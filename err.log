@@ -576,3 +576,2208 @@ Traceback (most recent call last):
     self.db[key] = value
 TypeError: String or Integer object expected for key, unicode found
 2015-08-20 17:48:33,923 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:55:29,369 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:55:29,369 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 17:55:37,381 INFO     errbot.errBot             Processing command 'status_plugins' with parameters '' from @john
+2015-08-20 17:55:37,381 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:55:37,381 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 17:56:16,930 INFO     errbot.backend_manager    Backends search paths [u'/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends']
+2015-08-20 17:56:16,935 INFO     errbot.backend_manager    Found those backends available:
+2015-08-20 17:56:16,935 INFO     errbot.backend_manager    	      Test  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.py)
+2015-08-20 17:56:16,935 INFO     errbot.backend_manager    	  Telegram  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.py)
+2015-08-20 17:56:16,936 INFO     errbot.backend_manager    	     Slack  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py)
+2015-08-20 17:56:16,936 INFO     errbot.backend_manager    	      Text  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.py)
+2015-08-20 17:56:16,936 INFO     errbot.backend_manager    	      Null  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.py)
+2015-08-20 17:56:16,936 INFO     errbot.backend_manager    	   Graphic  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.py)
+2015-08-20 17:56:16,937 INFO     errbot.backend_manager    	   Hipchat  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.py)
+2015-08-20 17:56:16,937 INFO     errbot.backend_manager    	       IRC  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.py)
+2015-08-20 17:56:16,937 INFO     errbot.backend_manager    	      XMPP  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.py)
+2015-08-20 17:56:16,937 INFO     errbot.main               Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2015-08-20 17:56:16,938 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,938 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,939 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,940 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,940 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,941 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,941 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,942 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:56:16,969 INFO     errbot.storage            Opened shelf of SlackBackend at /home/ec2-user/slacktodo/core.db
+2015-08-20 17:56:17,041 INFO     errbot.storage            Init shelf of Utils
+2015-08-20 17:56:17,042 INFO     errbot.storage            Init shelf of Backup
+2015-08-20 17:56:17,043 INFO     errbot.storage            Init shelf of Help
+2015-08-20 17:56:17,043 INFO     errbot.storage            Init shelf of VersionChecker
+2015-08-20 17:56:17,044 INFO     errbot.storage            Init shelf of Health
+2015-08-20 17:56:17,080 INFO     errbot                    webhooks:  Flag to bind /echo/ to echo
+2015-08-20 17:56:17,081 INFO     errbot.storage            Init shelf of Webserver
+2015-08-20 17:56:17,082 INFO     errbot.storage            Init shelf of ChatRoom
+2015-08-20 17:56:17,083 INFO     errbot.storage            Init shelf of Plugins
+2015-08-20 17:56:17,085 INFO     errbot.storage            Init shelf of Task
+2015-08-20 17:56:17,086 INFO     errbot.storage            Init shelf of StalkerBot
+2015-08-20 17:56:17,086 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot.py", line 1, in <module>
+    from weather import get_weather_for_location
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weather.py", line 3, in <module>
+    from urllib.parse import quote
+ImportError: No module named parse
+2015-08-20 17:56:17,087 INFO     errbot.storage            Init shelf of PollBot
+2015-08-20 17:56:17,088 INFO     errbot.storage            Init shelf of CalcBot
+2015-08-20 17:56:17,089 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 17:56:17,489 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 17:56:18,856 INFO     errbot.backends.slack     Connected
+2015-08-20 17:56:19,858 INFO     errbot.errBot             Activate internal commands
+2015-08-20 17:56:19,858 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 17:56:19,859 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 17:56:19,859 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,860 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 17:56:19,861 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 17:56:19,862 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 17:56:19,862 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,863 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 17:56:19,863 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 17:56:19,864 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 17:56:19,864 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 17:56:19,865 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 17:56:19,866 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 17:56:19,866 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 17:56:19,866 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 17:56:19,867 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 17:56:19,868 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 17:56:19,868 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 17:56:19,869 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 17:56:19,869 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 17:56:19,870 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 17:56:19,870 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 17:56:19,870 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,871 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 17:56:19,872 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 17:56:19,872 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-20 17:56:19,872 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-20 17:56:19,876 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-20 17:56:19,877 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-20 17:56:19,877 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 17:56:19,877 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,883 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 17:56:19,884 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 17:56:19,884 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 17:56:19,884 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,885 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 17:56:19,886 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 17:56:19,886 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 17:56:19,886 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,887 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 17:56:19,887 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 17:56:19,887 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 17:56:19,888 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 17:56:19,888 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:56:19,889 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 17:56:19,889 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 17:56:19,890 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 17:56:19,890 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 17:56:19,891 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 17:56:19,891 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 17:56:19,892 INFO     errbot.errBot             
+2015-08-20 17:56:19,892 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 17:56:19,892 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 17:56:19,892 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 17:56:19,893 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 17:56:20,292 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 17:56:20,292 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 17:56:53,472 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-20 17:56:53,473 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:56:53,473 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 17:57:05,490 INFO     errbot.errBot             Processing command 'killbot' with parameters '-really' from @john
+2015-08-20 17:57:05,518 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:57:05,518 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 17:57:12,528 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 17:57:12,555 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 51, in sigterm
+    sys.exit(0)
+SystemExit: 0
+2015-08-20 17:57:12,561 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 17:57:12,561 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 17:57:13,562 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 17:57:13,971 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 17:57:15,409 INFO     errbot.backends.slack     Connected
+2015-08-20 17:57:16,411 INFO     errbot.errBot             Activate internal commands
+2015-08-20 17:57:16,411 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 17:57:16,411 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 17:57:16,412 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,412 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 17:57:16,413 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 17:57:16,413 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 17:57:16,413 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 17:57:16,414 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 17:57:16,414 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 17:57:16,415 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 17:57:16,415 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 17:57:16,416 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 17:57:16,416 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 17:57:16,417 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 17:57:16,417 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,417 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 17:57:16,418 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 17:57:16,418 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 17:57:16,418 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,441 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 17:57:16,441 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 17:57:16,442 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 17:57:16,442 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 17:57:16,442 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 17:57:16,443 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 17:57:16,443 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 17:57:16,443 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,444 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 17:57:16,445 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 17:57:16,445 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 17:57:16,445 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,445 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 17:57:16,446 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 17:57:16,446 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 17:57:16,446 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 17:57:16,446 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,447 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 17:57:16,448 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 17:57:16,448 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 17:57:16,448 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:16,449 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 17:57:16,450 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 17:57:16,450 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 17:57:16,450 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 17:57:16,451 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 17:57:16,451 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 17:57:16,452 INFO     errbot.errBot             
+2015-08-20 17:57:16,452 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 17:57:16,452 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 17:57:16,452 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 17:57:16,452 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 17:57:16,840 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 17:57:16,840 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 17:57:28,565 INFO     errbot.backend_manager    Backends search paths [u'/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends']
+2015-08-20 17:57:28,570 INFO     errbot.backend_manager    Found those backends available:
+2015-08-20 17:57:28,570 INFO     errbot.backend_manager    	      Test  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.py)
+2015-08-20 17:57:28,570 INFO     errbot.backend_manager    	  Telegram  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.py)
+2015-08-20 17:57:28,570 INFO     errbot.backend_manager    	     Slack  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py)
+2015-08-20 17:57:28,570 INFO     errbot.backend_manager    	      Text  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.py)
+2015-08-20 17:57:28,571 INFO     errbot.backend_manager    	      Null  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.py)
+2015-08-20 17:57:28,571 INFO     errbot.backend_manager    	   Graphic  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.py)
+2015-08-20 17:57:28,571 INFO     errbot.backend_manager    	   Hipchat  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.py)
+2015-08-20 17:57:28,571 INFO     errbot.backend_manager    	       IRC  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.py)
+2015-08-20 17:57:28,571 INFO     errbot.backend_manager    	      XMPP  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.py)
+2015-08-20 17:57:28,572 INFO     errbot.main               Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2015-08-20 17:57:28,572 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,572 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,573 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,574 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,574 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,574 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,575 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,575 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 17:57:28,602 INFO     errbot.storage            Opened shelf of SlackBackend at /home/ec2-user/slacktodo/core.db
+2015-08-20 17:57:28,675 INFO     errbot.storage            Init shelf of Utils
+2015-08-20 17:57:28,676 INFO     errbot.storage            Init shelf of Backup
+2015-08-20 17:57:28,677 INFO     errbot.storage            Init shelf of Help
+2015-08-20 17:57:28,677 INFO     errbot.storage            Init shelf of VersionChecker
+2015-08-20 17:57:28,678 INFO     errbot.storage            Init shelf of Health
+2015-08-20 17:57:28,714 INFO     errbot                    webhooks:  Flag to bind /echo/ to echo
+2015-08-20 17:57:28,715 INFO     errbot.storage            Init shelf of Webserver
+2015-08-20 17:57:28,716 INFO     errbot.storage            Init shelf of ChatRoom
+2015-08-20 17:57:28,717 INFO     errbot.storage            Init shelf of Plugins
+2015-08-20 17:57:28,718 INFO     errbot.storage            Init shelf of Task
+2015-08-20 17:57:28,719 INFO     errbot.storage            Init shelf of StalkerBot
+2015-08-20 17:57:28,720 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot.py", line 1, in <module>
+    from weather import get_weather_for_location
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weather.py", line 3, in <module>
+    from urllib.parse import quote
+ImportError: No module named parse
+2015-08-20 17:57:28,721 INFO     errbot.storage            Init shelf of PollBot
+2015-08-20 17:57:28,722 INFO     errbot.storage            Init shelf of CalcBot
+2015-08-20 17:57:28,722 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 17:57:29,096 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 17:57:30,327 INFO     errbot.backends.slack     Connected
+2015-08-20 17:57:31,328 INFO     errbot.errBot             Activate internal commands
+2015-08-20 17:57:31,329 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 17:57:31,329 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 17:57:31,329 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,330 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 17:57:31,330 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 17:57:31,331 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 17:57:31,332 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 17:57:31,332 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 17:57:31,333 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 17:57:31,333 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 17:57:31,333 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 17:57:31,334 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 17:57:31,334 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 17:57:31,335 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 17:57:31,335 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,336 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 17:57:31,336 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 17:57:31,336 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 17:57:31,337 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,360 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 17:57:31,360 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 17:57:31,360 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 17:57:31,361 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 17:57:31,361 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 17:57:31,362 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 17:57:31,362 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 17:57:31,362 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,363 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 17:57:31,364 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 17:57:31,364 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 17:57:31,364 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,364 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 17:57:31,365 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 17:57:31,365 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 17:57:31,365 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-20 17:57:31,366 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-20 17:57:31,366 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-20 17:57:31,367 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-20 17:57:31,367 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 17:57:31,367 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,368 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 17:57:31,369 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 17:57:31,369 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 17:57:31,369 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 17:57:31,370 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 17:57:31,370 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 17:57:31,371 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 17:57:31,371 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 17:57:31,372 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 17:57:31,372 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 17:57:31,373 INFO     errbot.errBot             
+2015-08-20 17:57:31,373 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 17:57:31,373 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 17:57:31,373 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 17:57:31,373 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 17:57:31,762 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 17:57:31,762 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 17:57:36,770 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-20 17:57:36,770 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:57:36,770 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 17:57:36,864 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-20 17:57:36,865 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 17:57:36,865 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:00:18,952 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 18:00:18,970 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 51, in sigterm
+    sys.exit(0)
+SystemExit: 0
+2015-08-20 18:00:18,971 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 18:00:18,971 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 18:00:19,045 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 18:00:19,056 ERROR    errbot.backends.slack     message event handler raised an exception
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:00:19,973 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:00:20,385 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 18:00:21,737 INFO     errbot.backends.slack     Connected
+2015-08-20 18:00:22,739 INFO     errbot.errBot             Activate internal commands
+2015-08-20 18:00:22,740 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 18:00:22,740 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 18:00:22,740 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,741 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 18:00:22,742 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 18:00:22,742 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 18:00:22,743 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 18:00:22,743 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 18:00:22,744 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 18:00:22,744 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 18:00:22,744 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 18:00:22,745 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 18:00:22,745 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 18:00:22,746 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 18:00:22,746 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,746 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 18:00:22,747 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 18:00:22,747 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 18:00:22,747 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,753 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 18:00:22,754 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 18:00:22,754 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 18:00:22,755 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 18:00:22,755 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 18:00:22,756 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 18:00:22,756 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 18:00:22,756 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,757 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 18:00:22,757 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 18:00:22,758 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 18:00:22,758 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,758 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 18:00:22,758 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 18:00:22,759 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 18:00:22,759 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-20 18:00:22,759 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-20 18:00:22,760 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-20 18:00:22,760 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-20 18:00:22,761 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 18:00:22,761 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,762 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 18:00:22,762 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 18:00:22,762 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 18:00:22,763 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:22,763 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 18:00:22,764 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 18:00:22,764 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 18:00:22,764 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 18:00:22,765 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 18:00:22,765 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 18:00:22,766 INFO     errbot.errBot             
+2015-08-20 18:00:22,766 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 18:00:22,766 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 18:00:22,766 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 18:00:22,766 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 18:00:23,161 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 18:00:23,161 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 18:00:35,703 INFO     errbot.backend_manager    Backends search paths [u'/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends']
+2015-08-20 18:00:35,708 INFO     errbot.backend_manager    Found those backends available:
+2015-08-20 18:00:35,708 INFO     errbot.backend_manager    	      Test  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	  Telegram  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	     Slack  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	      Text  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	      Null  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	   Graphic  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.py)
+2015-08-20 18:00:35,709 INFO     errbot.backend_manager    	   Hipchat  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.py)
+2015-08-20 18:00:35,710 INFO     errbot.backend_manager    	       IRC  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.py)
+2015-08-20 18:00:35,710 INFO     errbot.backend_manager    	      XMPP  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.py)
+2015-08-20 18:00:35,710 INFO     errbot.main               Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2015-08-20 18:00:35,711 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,711 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,712 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,712 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,713 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,713 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,713 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,714 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-20 18:00:35,741 INFO     errbot.storage            Opened shelf of SlackBackend at /home/ec2-user/slacktodo/core.db
+2015-08-20 18:00:35,813 INFO     errbot.storage            Init shelf of Utils
+2015-08-20 18:00:35,813 INFO     errbot.storage            Init shelf of Backup
+2015-08-20 18:00:35,814 INFO     errbot.storage            Init shelf of Help
+2015-08-20 18:00:35,815 INFO     errbot.storage            Init shelf of VersionChecker
+2015-08-20 18:00:35,816 INFO     errbot.storage            Init shelf of Health
+2015-08-20 18:00:35,850 INFO     errbot                    webhooks:  Flag to bind /echo/ to echo
+2015-08-20 18:00:35,851 INFO     errbot.storage            Init shelf of Webserver
+2015-08-20 18:00:35,852 INFO     errbot.storage            Init shelf of ChatRoom
+2015-08-20 18:00:35,854 INFO     errbot.storage            Init shelf of Plugins
+2015-08-20 18:00:35,855 INFO     errbot.storage            Init shelf of Task
+2015-08-20 18:00:35,855 INFO     errbot.storage            Init shelf of StalkerBot
+2015-08-20 18:00:35,856 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot.py", line 1, in <module>
+    from weather import get_weather_for_location
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weather.py", line 3, in <module>
+    from urllib.parse import quote
+ImportError: No module named parse
+2015-08-20 18:00:35,857 INFO     errbot.storage            Init shelf of PollBot
+2015-08-20 18:00:35,858 INFO     errbot.storage            Init shelf of CalcBot
+2015-08-20 18:00:35,858 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:00:36,679 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 18:00:38,586 INFO     errbot.backends.slack     Connected
+2015-08-20 18:00:39,588 INFO     errbot.errBot             Activate internal commands
+2015-08-20 18:00:39,588 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 18:00:39,588 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 18:00:39,589 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,590 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 18:00:39,590 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 18:00:39,591 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 18:00:39,591 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 18:00:39,592 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 18:00:39,592 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 18:00:39,593 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 18:00:39,593 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 18:00:39,594 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 18:00:39,594 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 18:00:39,594 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 18:00:39,595 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,595 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 18:00:39,596 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 18:00:39,596 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 18:00:39,596 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,603 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 18:00:39,603 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 18:00:39,604 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 18:00:39,604 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 18:00:39,605 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 18:00:39,605 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 18:00:39,606 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 18:00:39,606 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,607 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 18:00:39,607 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 18:00:39,608 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 18:00:39,608 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 18:00:39,609 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 18:00:39,609 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 18:00:39,610 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 18:00:39,610 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,610 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 18:00:39,610 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 18:00:39,611 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 18:00:39,611 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-20 18:00:39,611 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-20 18:00:39,612 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-20 18:00:39,612 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-20 18:00:39,613 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 18:00:39,613 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,614 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 18:00:39,614 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 18:00:39,615 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 18:00:39,615 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:00:39,616 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 18:00:39,616 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 18:00:39,617 INFO     errbot.errBot             
+2015-08-20 18:00:39,617 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 18:00:39,617 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 18:00:39,617 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 18:00:39,617 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 18:00:41,459 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 18:00:41,459 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 18:00:45,466 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-20 18:00:45,466 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:00:45,466 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:00:46,189 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-20 18:00:46,189 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:00:46,190 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:00:59,483 INFO     errbot.errBot             Processing command 'help' with parameters 'Task' from @john
+2015-08-20 18:00:59,483 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:00:59,484 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:01:00,207 INFO     errbot.errBot             Processing command 'help' with parameters 'Task' from @john
+2015-08-20 18:01:00,208 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:01:00,208 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:01:25,237 INFO     errbot.errBot             Processing command 'task' with parameters '' from @john
+2015-08-20 18:01:25,238 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:01:25,238 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:01:25,515 INFO     errbot.errBot             Processing command 'task' with parameters '' from @john
+2015-08-20 18:01:25,515 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:01:25,516 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:03:26,376 INFO     errbot.errBot             Processing command 'task' with parameters '' from #performance-team/john
+2015-08-20 18:03:26,376 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:03:26,376 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:03:26,655 INFO     errbot.errBot             Processing command 'task' with parameters '' from #performance-team/john
+2015-08-20 18:03:26,656 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:03:26,656 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:08:32,710 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:08:32,710 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:08:33,005 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:08:33,005 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:08:59,038 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:08:59,039 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:08:59,745 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:08:59,745 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:09:44,089 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from #testing_hooks/john
+2015-08-20 18:09:44,091 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:09:44,091 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:09:44,799 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from #testing_hooks/john
+2015-08-20 18:09:44,801 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:09:44,801 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:09:56,815 INFO     errbot.errBot             Processing command 'repos' with parameters '' from @john
+2015-08-20 18:09:56,816 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:09:56,816 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:09:57,108 INFO     errbot.errBot             Processing command 'repos' with parameters '' from @john
+2015-08-20 18:09:57,108 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-20 18:09:57,108 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-20 18:10:05,150 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 18:10:05,207 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 51, in sigterm
+    sys.exit(0)
+SystemExit: 0
+2015-08-20 18:10:05,208 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 18:10:05,209 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 18:10:05,860 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 18:10:05,909 ERROR    errbot.backends.slack     message event handler raised an exception
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:10:06,210 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:10:06,631 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-20 18:10:07,984 INFO     errbot.backends.slack     Connected
+2015-08-20 18:10:08,986 INFO     errbot.errBot             Activate internal commands
+2015-08-20 18:10:08,986 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-20 18:10:08,986 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-20 18:10:08,987 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:08,987 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-20 18:10:08,988 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-20 18:10:08,988 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-20 18:10:08,988 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-20 18:10:08,989 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-20 18:10:08,989 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-20 18:10:08,990 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-20 18:10:08,990 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-20 18:10:08,991 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-20 18:10:08,991 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-20 18:10:08,992 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-20 18:10:08,992 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:08,992 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-20 18:10:08,993 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-20 18:10:08,993 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-20 18:10:08,994 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:09,037 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-20 18:10:09,037 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-20 18:10:09,038 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-20 18:10:09,038 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-20 18:10:09,039 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-20 18:10:09,039 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-20 18:10:09,040 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-20 18:10:09,040 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:09,041 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-20 18:10:09,041 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-20 18:10:09,041 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-20 18:10:09,042 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-20 18:10:09,042 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-20 18:10:09,043 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-20 18:10:09,043 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-20 18:10:09,043 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:09,044 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-20 18:10:09,044 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-20 18:10:09,044 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-20 18:10:09,045 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-20 18:10:09,045 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-20 18:10:09,045 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-20 18:10:09,046 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-20 18:10:09,046 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-20 18:10:09,046 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:09,047 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-20 18:10:09,048 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-20 18:10:09,048 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-20 18:10:09,048 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-20 18:10:09,049 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-20 18:10:09,049 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-20 18:10:09,050 INFO     errbot.errBot             
+2015-08-20 18:10:09,050 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-20 18:10:09,050 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-20 18:10:09,050 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-20 18:10:09,051 INFO     errbot.backends.slack     Joining channel #general
+2015-08-20 18:10:09,446 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-20 18:10:09,447 INFO     errbot.errBot             Plugin activation done.
+2015-08-20 18:10:14,454 INFO     errbot.errBot             Processing command 'killbot' with parameters 'really' from @john
+2015-08-20 18:10:14,492 ERROR    errbot.backends.slack     message event handler raised an exception
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 233, in serve_once
+    event_handler(message)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 328, in _message_event_handler
+    self.callback_message(msg)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 530, in callback_message
+    if self.process_message(mess):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 253, in process_message
+    self._process_command(mess, cmd, args, match=None)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 323, in _process_command
+    self.thread_pool.wait()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 333, in wait
+    self.poll(True)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/bundled/threadpool.py", line 318, in poll
+    request, result = self._results_queue.get(block=block)
+  File "/usr/lib64/python2.7/Queue.py", line 168, in get
+    self.not_empty.wait()
+  File "/usr/lib64/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:11:10,064 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 236, in serve_once
+    time.sleep(1)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:11:10,065 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 18:11:10,065 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 18:11:10,065 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 236, in serve_once
+    time.sleep(1)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:11:10,065 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 18:11:10,066 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 18:11:10,066 ERROR    errbot.backends.slack     Error reading from RTM stream:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 236, in serve_once
+    time.sleep(1)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/daemonize.py", line 50, in sigterm
+    os.remove(self.pid)
+OSError: [Errno 2] No such file or directory: '/home/ec2-user/slacktodo/err.pid'
+2015-08-20 18:11:10,066 INFO     errbot.errBot             Disconnect callback, deactivating all the plugins.
+2015-08-20 18:11:10,067 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far)
+2015-08-20 18:11:11,066 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:11:11,067 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:11:11,071 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-20 18:11:11,096 ERROR    errbot.backends.base      Exception occurred in serve_once:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/base.py", line 568, in serve_forever
+    if self.serve_once():
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 209, in serve_once
+    self.auth = self.api_call(u"auth.test", raise_errors=False)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 198, in api_call
+    response = json.loads(self.sc.server.api_call(method, **data).decode(u'utf-8'))
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_server.py", line 113, in api_call
+    reply = self.api_requester.do(self.token, method, kwargs)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_slackrequest.py", line 13, in do
+    return urllib2.urlopen(url, post_data)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/usr/lib64/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 1242, in https_open
+    context=self._context)
+  File "/usr/lib64/python2.7/urllib2.py", line 1199, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2015-08-20 18:11:11,102 INFO     errbot.backends.base      Reconnecting in 3.6565051805 seconds (1 attempted reconnections so far)
+2015-08-20 18:11:11,097 ERROR    errbot.backends.base      Exception occurred in serve_once:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/base.py", line 568, in serve_forever
+    if self.serve_once():
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 209, in serve_once
+    self.auth = self.api_call(u"auth.test", raise_errors=False)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 198, in api_call
+    response = json.loads(self.sc.server.api_call(method, **data).decode(u'utf-8'))
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_server.py", line 113, in api_call
+    reply = self.api_requester.do(self.token, method, kwargs)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_slackrequest.py", line 13, in do
+    return urllib2.urlopen(url, post_data)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/usr/lib64/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 1242, in https_open
+    context=self._context)
+  File "/usr/lib64/python2.7/urllib2.py", line 1199, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2015-08-20 18:11:11,103 INFO     errbot.backends.base      Reconnecting in 4.66111535032 seconds (1 attempted reconnections so far)
+2015-08-20 18:11:11,097 ERROR    errbot.backends.base      Exception occurred in serve_once:
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/base.py", line 568, in serve_forever
+    if self.serve_once():
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 209, in serve_once
+    self.auth = self.api_call(u"auth.test", raise_errors=False)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 198, in api_call
+    response = json.loads(self.sc.server.api_call(method, **data).decode(u'utf-8'))
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_server.py", line 113, in api_call
+    reply = self.api_requester.do(self.token, method, kwargs)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/slackclient/_slackrequest.py", line 13, in do
+    return urllib2.urlopen(url, post_data)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/usr/lib64/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 1242, in https_open
+    context=self._context)
+  File "/usr/lib64/python2.7/urllib2.py", line 1199, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno -2] Name or service not known>
+2015-08-20 18:11:11,103 INFO     errbot.backends.base      Reconnecting in 4.10724056696 seconds (1 attempted reconnections so far)
+2015-08-21 12:54:52,563 INFO     errbot.backend_manager    Backends search paths [u'/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends']
+2015-08-21 12:54:52,574 INFO     errbot.backend_manager    Found those backends available:
+2015-08-21 12:54:52,574 INFO     errbot.backend_manager    	      Test  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.py)
+2015-08-21 12:54:52,574 INFO     errbot.backend_manager    	  Telegram  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	     Slack  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	      Text  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	      Null  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	   Graphic  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	   Hipchat  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.py)
+2015-08-21 12:54:52,575 INFO     errbot.backend_manager    	       IRC  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.py)
+2015-08-21 12:54:52,576 INFO     errbot.backend_manager    	      XMPP  (/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.py)
+2015-08-21 12:54:52,576 INFO     errbot.main               Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2015-08-21 12:54:52,576 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,577 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/telegram.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,578 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,578 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,578 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,579 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,579 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,579 WARNING  yapsy                     Plugin candidate '/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2015-08-21 12:54:52,648 INFO     errbot.storage            Opened shelf of SlackBackend at /home/ec2-user/slacktodo/core.db
+2015-08-21 12:54:52,899 INFO     errbot.storage            Init shelf of Utils
+2015-08-21 12:54:52,900 INFO     errbot.storage            Init shelf of Backup
+2015-08-21 12:54:52,901 INFO     errbot.storage            Init shelf of Help
+2015-08-21 12:54:52,903 INFO     errbot.storage            Init shelf of VersionChecker
+2015-08-21 12:54:52,904 INFO     errbot.storage            Init shelf of Health
+2015-08-21 12:54:53,008 INFO     errbot                    webhooks:  Flag to bind /echo/ to echo
+2015-08-21 12:54:53,009 INFO     errbot.storage            Init shelf of Webserver
+2015-08-21 12:54:53,011 INFO     errbot.storage            Init shelf of ChatRoom
+2015-08-21 12:54:53,013 INFO     errbot.storage            Init shelf of Plugins
+2015-08-21 12:54:53,015 INFO     errbot.storage            Init shelf of Task
+2015-08-21 12:54:53,017 INFO     errbot.storage            Init shelf of StalkerBot
+2015-08-21 12:54:53,019 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot.py", line 1, in <module>
+    from weather import get_weather_for_location
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weather.py", line 3, in <module>
+    from urllib.parse import quote
+ImportError: No module named parse
+2015-08-21 12:54:53,023 INFO     errbot.storage            Init shelf of PollBot
+2015-08-21 12:54:53,024 INFO     errbot.storage            Init shelf of CalcBot
+2015-08-21 12:54:53,024 INFO     errbot.backends.slack     Verifying authentication token
+2015-08-21 12:54:53,421 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2015-08-21 12:54:54,753 INFO     errbot.backends.slack     Connected
+2015-08-21 12:54:55,755 INFO     errbot.errBot             Activate internal commands
+2015-08-21 12:54:55,755 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-21 12:54:55,755 INFO     errbot.plugin_manager     Activate plugin: Utils
+2015-08-21 12:54:55,755 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,757 INFO     errbot.storage            Opened shelf of Utils at /home/ec2-user/slacktodo/plugins/Utils.db
+2015-08-21 12:54:55,758 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2015-08-21 12:54:55,759 INFO     errbot.plugin_manager     Activate plugin: Backup
+2015-08-21 12:54:55,759 INFO     errbot.plugin_manager     Activating Backup with min_err_version = None and max_version = None
+2015-08-21 12:54:55,760 INFO     errbot.storage            Opened shelf of Backup at /home/ec2-user/slacktodo/plugins/Backup.db
+2015-08-21 12:54:55,761 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2015-08-21 12:54:55,761 INFO     errbot.plugin_manager     Activate plugin: StalkerBot
+2015-08-21 12:54:55,761 INFO     errbot.plugin_manager     Activating StalkerBot with min_err_version = None and max_version = None
+2015-08-21 12:54:55,763 INFO     errbot.storage            Opened shelf of StalkerBot at /home/ec2-user/slacktodo/plugins/StalkerBot.db
+2015-08-21 12:54:55,763 INFO     errbot.core_plugins.wsview Checking StalkerBot for webhooks
+2015-08-21 12:54:55,763 INFO     errbot.plugin_manager     Activate plugin: Help
+2015-08-21 12:54:55,764 INFO     errbot.plugin_manager     Activating Help with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,765 INFO     errbot.storage            Opened shelf of Help at /home/ec2-user/slacktodo/plugins/Help.db
+2015-08-21 12:54:55,766 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2015-08-21 12:54:55,766 INFO     errbot.plugin_manager     Activate plugin: CalcBot
+2015-08-21 12:54:55,766 INFO     errbot.plugin_manager     Activating CalcBot with min_err_version = None and max_version = None
+2015-08-21 12:54:55,768 INFO     errbot.storage            Opened shelf of CalcBot at /home/ec2-user/slacktodo/plugins/CalcBot.db
+2015-08-21 12:54:55,768 INFO     errbot.core_plugins.wsview Checking CalcBot for webhooks
+2015-08-21 12:54:55,769 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2015-08-21 12:54:55,769 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,877 INFO     errbot.storage            Opened shelf of VersionChecker at /home/ec2-user/slacktodo/plugins/VersionChecker.db
+2015-08-21 12:54:55,878 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2015-08-21 12:54:55,878 INFO     errbot.plugin_manager     Activate plugin: PollBot
+2015-08-21 12:54:55,878 INFO     errbot.plugin_manager     Activating PollBot with min_err_version = 2.2.0-beta and max_version = None
+2015-08-21 12:54:55,880 INFO     errbot.storage            Opened shelf of PollBot at /home/ec2-user/slacktodo/plugins/PollBot.db
+2015-08-21 12:54:55,880 INFO     errbot.core_plugins.wsview Checking PollBot for webhooks
+2015-08-21 12:54:55,880 INFO     errbot.plugin_manager     Activate plugin: Health
+2015-08-21 12:54:55,881 INFO     errbot.plugin_manager     Activating Health with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,882 INFO     errbot.storage            Opened shelf of Health at /home/ec2-user/slacktodo/plugins/Health.db
+2015-08-21 12:54:55,883 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2015-08-21 12:54:55,883 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-21 12:54:55,883 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,883 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-21 12:54:55,884 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-21 12:54:55,884 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-21 12:54:55,884 INFO     errbot.plugin_manager     Activate plugin: Task
+2015-08-21 12:54:55,884 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 12:54:55,886 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 12:54:55,886 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 12:54:55,887 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2015-08-21 12:54:55,887 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,888 INFO     errbot.storage            Opened shelf of ChatRoom at /home/ec2-user/slacktodo/plugins/ChatRoom.db
+2015-08-21 12:54:55,889 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2015-08-21 12:54:55,889 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2015-08-21 12:54:55,889 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 12:54:55,891 INFO     errbot.storage            Opened shelf of Plugins at /home/ec2-user/slacktodo/plugins/Plugins.db
+2015-08-21 12:54:55,891 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2015-08-21 12:54:55,891 INFO     errbot.errBot             
+2015-08-21 12:54:55,892 INFO     errbot.errBot             Notifying connection to all the plugins...
+2015-08-21 12:54:55,892 INFO     errbot.plugins.ChatRoom   Callback_connect
+2015-08-21 12:54:55,892 INFO     errbot.plugins.ChatRoom   Joining room #general with username rocket
+2015-08-21 12:54:55,892 INFO     errbot.backends.slack     Joining channel #general
+2015-08-21 12:54:56,270 ERROR    errbot.plugins.ChatRoom   Joining room '#general' failed
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 33, in callback_connect
+    self._join_room(room)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/core_plugins/chatRoom.py", line 47, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/backends/slack.py", line 574, in join
+    raise RoomError(u"Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2015-08-21 12:54:56,273 INFO     errbot.errBot             Plugin activation done.
+2015-08-21 12:55:10,294 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:55:10,294 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:55:13,308 INFO     errbot.errBot             Processing command 'help' with parameters '' from @john
+2015-08-21 12:55:13,308 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:55:13,309 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:55:25,324 INFO     errbot.errBot             Processing command 'task' with parameters '' from @john
+2015-08-21 12:55:25,324 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:55:25,325 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:55:56,364 INFO     errbot.errBot             Processing command 'task' with parameters '' from #ingenie/john
+2015-08-21 12:55:56,365 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:55:56,365 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:56:16,390 INFO     errbot.errBot             Processing command 'task' with parameters '' from #ingenie/ainslee
+2015-08-21 12:56:16,391 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:56:16,391 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:56:29,408 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:56:29,409 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:57:10,459 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:57:10,459 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:58:33,559 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:58:33,559 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:58:36,568 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:58:36,568 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 12:59:22,625 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 12:59:22,625 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:00:41,720 INFO     errbot.errBot             Processing command 'task' with parameters '' from #testing_hooks/john
+2015-08-21 13:00:41,720 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:00:41,720 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:01:50,804 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:01:50,805 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:01:54,812 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:01:54,812 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:01:56,815 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:01:56,816 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:01:58,819 INFO     errbot.errBot             Processing command 'help' with parameters '' from #testing_hooks/john
+2015-08-21 13:01:58,820 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:01:58,820 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:02:07,834 INFO     errbot.errBot             Processing command 'repos' with parameters '' from #testing_hooks/john
+2015-08-21 13:02:07,834 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:02:07,834 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:02:21,870 INFO     errbot.errBot             Processing command 'repos_install' with parameters 'err-imagebot' from #testing_hooks/john
+2015-08-21 13:02:21,871 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:02:21,871 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:02:31,885 INFO     errbot.errBot             Processing command 'repos_install' with parameters 'err-imagebot' from @john
+2015-08-21 13:02:32,651 INFO     errbot                    webhooks:  Flag to bind /echo/ to echo
+2015-08-21 13:02:32,656 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weatherBot.py", line 1, in <module>
+    from weather import get_weather_for_location
+  File "/home/ec2-user/slacktodo/plugins/err-weatherbot/weather.py", line 3, in <module>
+    from urllib.parse import quote
+ImportError: No module named parse
+2015-08-21 13:02:32,658 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-imagebot/cartoons
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-imagebot/cartoons.py", line 4, in <module>
+    from imageBot import extract_rss_urls
+  File "/home/ec2-user/slacktodo/plugins/err-imagebot/imageBot.py", line 14, in <module>
+    from lxml import objectify
+ImportError: No module named lxml
+2015-08-21 13:02:32,659 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-imagebot/posters
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-imagebot/posters.py", line 2, in <module>
+    from feedparser import parse
+ImportError: No module named feedparser
+2015-08-21 13:02:32,659 ERROR    yapsy                     Unable to import plugin: /home/ec2-user/slacktodo/plugins/err-imagebot/imageBot
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/yapsy/PluginManager.py", line 488, in loadPlugins
+    candidate_module = imp.load_module(plugin_module_name,plugin_file,candidate_filepath+".py",("py","r",imp.PY_SOURCE))
+  File "/home/ec2-user/slacktodo/plugins/err-imagebot/imageBot.py", line 14, in <module>
+    from lxml import objectify
+ImportError: No module named lxml
+2015-08-21 13:02:32,661 INFO     errbot.plugin_manager     Activating all the plugins...
+2015-08-21 13:02:32,661 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2015-08-21 13:02:32,661 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 3.0.0 and max_version = 3.0.0
+2015-08-21 13:02:32,662 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2015-08-21 13:02:32,662 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2015-08-21 13:02:32,662 INFO     errbot.core_plugins.wsview ... Routing echo
+2015-08-21 13:02:32,663 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:02:32,664 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:04:11,785 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:04:11,785 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:09:21,153 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:09:21,153 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:38:50,249 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:38:50,250 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:38:59,263 INFO     errbot.errBot             Processing command 'plugin_reload' with parameters 'Task' from @john
+2015-08-21 13:38:59,287 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 13:38:59,288 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 13:38:59,288 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 13:38:59,290 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:38:59,290 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:39:11,306 INFO     errbot.errBot             Processing command 'task' with parameters 'this is a task for <@U03M3607W>' from @john
+2015-08-21 13:39:11,307 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:39:11,307 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:44:23,681 INFO     errbot.errBot             Processing command 'task' with parameters 'this is a task for <@U03M3607W>' from #testing_hooks/john
+2015-08-21 13:44:23,682 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:44:23,682 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:46:39,849 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:46:39,849 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:47:26,907 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:47:26,907 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:47:41,927 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:47:41,927 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:50:29,127 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:50:29,127 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 13:50:34,136 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 13:50:34,136 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:02:33,986 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:02:33,986 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:24:22,520 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:24:22,521 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:24:32,533 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:24:32,534 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:33:05,131 INFO     errbot.errBot             Processing command 'plugin_reload' with parameters 'Task' from @john
+2015-08-21 14:33:05,178 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 14:33:05,179 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 14:33:05,180 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 14:33:05,181 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:33:05,181 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:33:17,197 INFO     errbot.errBot             Processing command 'task' with parameters 'assign task to <@U03M3607W>' from @john
+2015-08-21 14:33:17,198 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:33:17,198 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:34:15,268 INFO     errbot.errBot             Processing command 'plugin_reload' with parameters 'Task' from @john
+2015-08-21 14:34:15,293 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 14:34:15,294 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 14:34:15,294 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 14:34:15,296 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:34:15,296 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:34:24,308 INFO     errbot.errBot             Processing command 'task' with parameters 'assign task to <@U03M3607W>' from @john
+2015-08-21 14:34:24,308 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:34:24,308 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:34:24,310 ERROR    errbot.errBot             An error happened while processing a message ("!task assign task to <@U03M3607W>"): Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 11, in task
+    channel = frm.split('/')[0]
+AttributeError: 'SlackIdentifier' object has no attribute 'split'
+"
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 11, in task
+    channel = frm.split('/')[0]
+AttributeError: 'SlackIdentifier' object has no attribute 'split'
+2015-08-21 14:47:16,219 INFO     errbot.errBot             Processing command 'plugin_reload' with parameters 'Task' from @john
+2015-08-21 14:47:16,260 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 14:47:16,261 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 14:47:16,261 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 14:47:16,263 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:47:16,263 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:47:21,270 INFO     errbot.errBot             Processing command 'task' with parameters 'assign task to <@U03M3607W>' from @john
+2015-08-21 14:47:21,271 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:47:21,272 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:47:21,313 ERROR    errbot.errBot             An error happened while processing a message ("!task assign task to <@U03M3607W>"): Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
+"
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
+2015-08-21 14:48:46,371 INFO     errbot.errBot             Processing command 'plugin_reload' with parameters 'Task' from @john
+2015-08-21 14:48:46,400 INFO     errbot.plugin_manager     Activating Task with min_err_version = None and max_version = None
+2015-08-21 14:48:46,401 INFO     errbot.storage            Opened shelf of Task at /home/ec2-user/slacktodo/plugins/Task.db
+2015-08-21 14:48:46,401 INFO     errbot.core_plugins.wsview Checking Task for webhooks
+2015-08-21 14:48:46,403 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:48:46,403 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:48:53,413 INFO     errbot.errBot             Processing command 'task' with parameters 'assign task to <@U03M3607W>' from @john
+2015-08-21 14:48:53,413 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:48:53,413 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:48:53,437 ERROR    errbot.errBot             An error happened while processing a message ("!task assign task to <@U03M3607W>"): Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
+"
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
+2015-08-21 14:49:50,481 INFO     errbot.errBot             Processing command 'task' with parameters 'assign task to <@U03M3607W>' from @john
+2015-08-21 14:49:50,482 WARNING  errbot.backends           .node is deprecated on this type of identifier, use .person instead
+2015-08-21 14:49:50,482 ERROR    errbot.errBot             Crash in a callback_message handler
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 544, in callback_message
+    plugin.callback_message(mess)
+  File "/home/ec2-user/slacktodo/plugins/err-stalkerbot/stalkerBot.py", line 18, in callback_message
+    'msg': message,
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/storage.py", line 50, in __setitem__
+    answer = self.shelf.__setitem__(key, item)
+  File "/usr/lib64/python2.7/shelve.py", line 133, in __setitem__
+    self.dict[key] = f.getvalue()
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 279, in __setitem__
+    _DeadlockWrap(wrapF)  # self.db[key] = value
+  File "/usr/lib64/python2.7/bsddb/dbutils.py", line 68, in DeadlockWrap
+    return function(*_args, **_kwargs)
+  File "/usr/lib64/python2.7/bsddb/__init__.py", line 278, in wrapF
+    self.db[key] = value
+TypeError: String or Integer object expected for key, unicode found
+2015-08-21 14:49:50,496 ERROR    errbot.errBot             An error happened while processing a message ("!task assign task to <@U03M3607W>"): Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
+"
+Traceback (most recent call last):
+  File "/home/ec2-user/.virtualenvs/slack/local/lib/python2.7/site-packages/errbot/errBot.py", line 355, in _execute_and_send
+    for reply in replies:
+  File "/home/ec2-user/slacktodo/plugins/Task/task.py", line 12, in task
+    sender = frm.split('/')[1]
+IndexError: list index out of range
