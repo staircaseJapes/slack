@@ -12,7 +12,7 @@ class Task(BotPlugin):
         sender = frm.split('/')[1]
         target = str([x for x in msg if x[0] =="@"])
         task = " ".join([x for x in msg if x[0] != "@"])
-        for i for msg:
-            print i
+        for i in msg:
+            yield i
         yield target
         yield task
