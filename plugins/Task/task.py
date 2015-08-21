@@ -10,5 +10,5 @@ class Task(BotPlugin):
         msg = args
         channel = frm.split('/')[0]
         sender = frm.split('/')[1]
-        yield channel
-        yield sender
+        yield frm 
+        yield msg
