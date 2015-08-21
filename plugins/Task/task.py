@@ -9,3 +9,5 @@ class Task(BotPlugin):
         channel = msg.to
         yield str(channel)
         yield msg.frm
+        for i in args:
+            yield i
