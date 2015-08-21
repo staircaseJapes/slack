@@ -8,7 +8,8 @@ class Task(BotPlugin):
         """Print channel and sender"""
         frm = str(msg.frm)
         msg = [str(x) for x in args]
-        yield msg
+        target = str([x for x in msg if x[0] =="@"])
+        yield target
 
         """
         channel = frm.split('/')[0]
