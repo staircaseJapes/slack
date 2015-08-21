@@ -1,4 +1,13 @@
 from errbot import BotPlugin, botcmd
+import time
+import json
+from slackclient import SlackClient
+from pytodoist import todoist
+
+def plain_name(code):
+    dump = json.loads(sc.api_call("users.info", user=code))
+    return dump['user']['name']
+
 
 class Task(BotPlugin):
     """Integration between Slack and Todoist"""
@@ -9,7 +18,7 @@ class Task(BotPlugin):
         frm = str(msg.frm)
         msg = [str(x) for x in args]
         target = str([x for x in msg if x[0] =="@"])
-        yield msg
+        yield target
 
         """
         channel = frm.split('/')[0]
