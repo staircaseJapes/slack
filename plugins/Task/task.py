@@ -6,7 +6,7 @@ class Task(BotPlugin):
     @botcmd(split_args_with=None)
     def task(self, msg, args):
         """Print channel and sender"""
-        frm = msg.frm
+        frm = str(msg.frm)
         msg = args
         channel = frm.split('/')[0]
         sender = frm.split('/')[1]
