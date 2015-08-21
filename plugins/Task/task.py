@@ -17,7 +17,8 @@ class Task(BotPlugin):
         """Print channel and sender"""
         frm = str(msg.frm)
         msg = [str(x) for x in args]
-        target = str([x for x in msg if x[0] =="@"])
+        target = [x for x in msg if x[0] =="@"]
+        yield msg
         yield target
 
         """
